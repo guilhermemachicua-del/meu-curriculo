@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Guilherme Machicua</title>
+  <meta name="description" content="Formulário de contacto de Guilherme Machicua.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__barra">
+      <a href="index.html" class="logotipo">Guilherme <span>Machicua</span></a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-toggle-label" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="navegacao" aria-label="Navegação principal">
+        <ul class="navegacao__lista">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Currículo</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="contact.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contacto-intro">
+      <div class="container">
+        <h1>Vamos falar</h1>
+        <p>Preencha o formulário abaixo e entrarei em contacto o mais breve possível.</p>
+      </div>
+    </section>
+
+    <section class="contacto-formulario">
+      <div class="container">
+        <form class="formulario-contacto" action="#" method="post">
+
+          <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <div class="campo">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" required minlength="3" placeholder="O seu nome">
+              <span class="dica">Mínimo de 3 caracteres.</span>
+            </div>
+
+            <div class="campo">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="nome@exemplo.com">
+            </div>
+
+            <div class="campo">
+              <label for="telefone">Telefone</label>
+              <input type="tel" id="telefone" name="telefone" pattern="8[2-7][0-9]{7}" placeholder="84xxxxxxx">
+              <span class="dica">Formato: número moçambicano com 9 dígitos (ex: 841234567).</span>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Detalhes do contacto</legend>
+
+            <div class="campo">
+              <label for="data">Data preferida de contacto</label>
+              <input type="date" id="data" name="data">
+            </div>
+
+            <div class="campo">
+              <label for="orcamento">Orçamento estimado (MZN)</label>
+              <input type="number" id="orcamento" name="orcamento" min="500" max="100000" step="100">
+            </div>
+
+            <div class="campo">
+              <label for="ficheiro">Anexar CV ou portfólio</label>
+              <input type="file" id="ficheiro" name="ficheiro" accept=".pdf,.doc,.docx">
+            </div>
+
+            <div class="campo">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto">
+                <option value="">Selecione uma opção</option>
+                <option value="pagina-vendas">Criação de página de vendas</option>
+                <option value="marketing">Marketing digital</option>
+                <option value="eletronica">Manutenção eletrónica</option>
+                <option value="eletricidade">Serviço elétrico</option>
+                <option value="outro">Outro assunto</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <span>Como prefere ser contactado?</span>
+              <div class="grupo-opcoes">
+                <span class="opcao">
+                  <input type="radio" id="contacto-email" name="contacto-preferido" value="email" checked>
+                  <label for="contacto-email">Email</label>
+                </span>
+                <span class="opcao">
+                  <input type="radio" id="contacto-telefone" name="contacto-preferido" value="telefone">
+                  <label for="contacto-telefone">Telefone</label>
+                </span>
+                <span class="opcao">
+                  <input type="radio" id="contacto-whatsapp" name="contacto-preferido" value="whatsapp">
+                  <label for="contacto-whatsapp">WhatsApp</label>
+                </span>
+              </div>
+            </div>
+
+            <div class="campo">
+              <span>Áreas de interesse</span>
+              <div class="grupo-opcoes">
+                <span class="opcao">
+                  <input type="checkbox" id="interesse-vendas" name="interesses" value="vendas">
+                  <label for="interesse-vendas">Páginas de vendas</label>
+                </span>
+                <span class="opcao">
+                  <input type="checkbox" id="interesse-marketing" name="interesses" value="marketing">
+                  <label for="interesse-marketing">Marketing digital</label>
+                </span>
+                <span class="opcao">
+                  <input type="checkbox" id="interesse-eletrica" name="interesses" value="eletrica">
+                  <label for="interesse-eletrica">Serviços elétricos</label>
+                </span>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Mensagem</legend>
+            <div class="campo">
+              <label for="mensagem">A sua mensagem</label>
+              <textarea id="mensagem" name="mensagem" required minlength="10" maxlength="500" placeholder="Escreva aqui a sua mensagem..."></textarea>
+              <span class="dica">Entre 10 e 500 caracteres.</span>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="botao botao--primario">Enviar mensagem</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grelha">
+      <ul class="rodape__contactos">
+        <li><i class="fa-solid fa-envelope"></i> guilherme.machicua@exemplo.co.mz</li>
+        <li><i class="fa-solid fa-phone"></i> +258 84 000 0000</li>
+        <li><i class="fa-brands fa-linkedin"></i> linkedin.com/in/guilherme-machicua</li>
+      </ul>
+    </div>
+    <div class="container rodape__assinatura">
+      Desenvolvido por Guilherme Machicua
+    </div>
+  </footer>
+
+</body>
+</html>

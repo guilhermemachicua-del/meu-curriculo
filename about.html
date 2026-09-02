@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo — Guilherme Machicua</title>
+  <meta name="description" content="Formação académica, experiência e competências técnicas de Guilherme Machicua.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__barra">
+      <a href="index.html" class="logotipo">Guilherme <span>Machicua</span></a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-toggle-label" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="navegacao" aria-label="Navegação principal">
+        <ul class="navegacao__lista">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">Currículo</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="curriculo-intro">
+      <div class="container">
+        <h1>Currículo</h1>
+        <p>Um resumo da minha formação, experiência prática e nível de proficiência nas áreas em que atuo.</p>
+      </div>
+    </section>
+
+    <section class="formacao">
+      <div class="container">
+        <h2>Formação académica</h2>
+        <ul class="lista-percurso">
+          <li>
+            <time datetime="2024">2024</time>
+            <h3>Formação Básica de Eletricidade</h3>
+            <p>Fundamentos de instalações elétricas residenciais, normas de segurança e leitura de esquemas.</p>
+          </li>
+          <li>
+            <time datetime="2023">2023</time>
+            <h3>Curso Técnico — Eletrónica e Manutenção</h3>
+            <p>Base teórica e prática em diagnóstico e reparação de equipamentos eletrónicos.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="experiencia">
+      <div class="container">
+        <h2>Experiência</h2>
+        <ul class="lista-percurso">
+          <li>
+            <time datetime="2025">2025 — atual</time>
+            <h3>Administrador de Marketing</h3>
+            <p>Gestão de campanhas e conteúdos digitais, acompanhamento de métricas e apoio à criação de páginas de vendas para clientes.</p>
+          </li>
+          <li>
+            <time datetime="2023">2023</time>
+            <h3>Estagiário de Manutenção Eletrónica</h3>
+            <p>Diagnóstico, reparação e manutenção preventiva de equipamentos eletrónicos em ambiente de estágio.</p>
+          </li>
+        </ul>
+
+        <figure>
+          <img src="assets/img/certificado-eletricidade.svg" alt="Certificado de formação em Eletricidade Básica emitido a Guilherme Machicua" width="640" height="452">
+          <figcaption>Certificado de conclusão — Formação Básica de Eletricidade</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="competencias-tecnicas">
+      <div class="container">
+        <h2>Competências técnicas</h2>
+        <div class="tabela-wrapper">
+          <table>
+            <caption>Nível de proficiência por área de atuação</caption>
+            <thead>
+              <tr>
+                <th scope="col">Categoria</th>
+                <th scope="col">Competência</th>
+                <th scope="col">Nível</th>
+                <th scope="col">Ferramentas / Notas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="rowgroup" rowspan="2">Marketing &amp; Vendas</th>
+                <td>Criação de páginas de vendas</td>
+                <td>Avançado</td>
+                <td>HTML, CSS, copywriting</td>
+              </tr>
+              <tr>
+                <td>Administração de marketing digital</td>
+                <td>Intermédio</td>
+                <td>Redes sociais, gestão de campanhas</td>
+              </tr>
+              <tr>
+                <th scope="rowgroup" rowspan="2">Área Técnica / Elétrica</th>
+                <td>Manutenção eletrónica</td>
+                <td>Intermédio (estágio)</td>
+                <td>Diagnóstico e reparação de equipamentos</td>
+              </tr>
+              <tr>
+                <td>Eletricidade básica</td>
+                <td>Fundamentos</td>
+                <td>Instalações residenciais, normas de segurança</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">Última atualização: 2026</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+      <a href="assets/ficheiros/Machicua_CV_1.pdf" download class="botao botao--primario">
+  <i class="fa-solid fa-download"></i> Baixar CV (PDF)
+</a>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grelha">
+      <ul class="rodape__contactos">
+        <li><i class="fa-solid fa-envelope"></i> guilherme.machicua@exemplo.co.mz</li>
+        <li><i class="fa-solid fa-phone"></i> +258 86 1247275</li>
+        <li><i class="fa-brands fa-linkedin"></i> linkedin.com/in/guilherme-machicua</li>
+      </ul>
+    </div>
+    <div class="container rodape__assinatura">
+      Desenvolvido por Guilherme Machicua
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guilherme Machicua — Currículo Pessoal</title>
+  <meta name="description" content="Site pessoal de currículo de Guilherme Machicua: marketing digital, páginas de vendas e eletricidade.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="container cabecalho__barra">
+      <a href="index.html" class="logotipo">Guilherme <span>Machicua</span></a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-toggle-label" aria-label="Abrir menu de navegação">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="navegacao" aria-label="Navegação principal">
+        <ul class="navegacao__lista">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">Currículo</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grelha">
+        <div class="hero__texto">
+          <h1>Olá, sou o <span class="destaque">Guilherme Machicua</span></h1>
+          <p class="hero__tagline">Do circuito à conversão: construo páginas que vendem e equipamentos que funcionam.</p>
+          <p>Aliando a formação técnica em eletricidade e manutenção eletrónica com experiência prática em marketing digital e criação de páginas de vendas, ajudo negócios a resolver problemas — tanto no terreno como online.</p>
+          <ul class="competencias">
+            <li>Páginas de Vendas</li>
+            <li>Marketing Digital</li>
+            <li>Manutenção Eletrónica</li>
+            <li>Eletricidade</li>
+          </ul>
+          <p style="margin-top: 1.75rem;">
+            <a href="contact.html" class="botao botao--primario">Entrar em contacto</a>
+          </p>
+        </div>
+
+        <div class="hero__avatar">
+          <img src="assets/img/avatar.jpeg" alt="Ilustração de avatar com as iniciais GM, representando Guilherme Machicua" width="280" height="280">
+        </div>
+      </div>
+    </section>
+
+    <section class="apresentacao">
+      <div class="container">
+        <h2>Uma breve apresentação</h2>
+        <p>O vídeo abaixo resume rapidamente o meu percurso e o que posso oferecer a quem procura um profissional versátil, tanto na área técnica como na digital.</p>
+        <div class="multimedia-bloco">
+          <video controls poster="assets/img/video-poster.png" width="640" height="360">
+            <source src="assets/video/apresentacao.mp4" type="video/mp4">
+            O seu navegador não suporta a reprodução deste vídeo. Pode descarregá-lo <a href="assets/video/apresentacao.mp4">aqui</a>.
+          </video>
+        </div>
+      </div>
+       <div class="multimedia-bloco">
+          <h2>Uma faixa para treinar</h2>
+          <p>Uma pequena amostra de áudio que costumo ouvir antes de ir treinar.</p>
+          <audio controls>
+            <source src="assets/audio/aprensentacao.aac" type="audio/aac">
+            O seu navegador não suporta a reprodução deste áudio.
+          </audio>
+        </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__grelha">
+      <ul class="rodape__contactos">
+        <li><i class="fa-solid fa-envelope"></i> guilhermemachicua@exemplo.co.mz</li>
+        <li><i class="fa-solid fa-phone"></i> +258 86 1247275</li>
+        <li><i class="fa-brands fa-linkedin"></i> linkedin.com/in/guilherme-machicua</li>
+      </ul>
+    </div>
+    <div class="container rodape__assinatura">
+      Desenvolvido por Guilherme Machicua
+    </div>
+  </footer>
+
+</body>
+</html>
