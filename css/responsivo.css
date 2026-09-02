@@ -1,0 +1,96 @@
+/* ==========================================================================
+   RESPONSIVO.CSS — media queries (abordagem mobile-first)
+   Base (sem media query, em estilo.css) = comportamento para telemóvel.
+   Aqui ampliamos progressivamente para tablet e depois para desktop.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Telemóvel pequeno (até ~480px) — ajustes finos ao layout base mobile
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .hero__avatar {
+    flex-basis: 200px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .rodape__grelha {
+    flex-direction: column;
+  }
+
+  .grupo-opcoes {
+    flex-direction: column;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Tablet e acima (a partir de 481px) — mobile-first: começamos a "ampliar"
+   -------------------------------------------------------------------------- */
+@media (min-width: 481px) {
+  .grelha-portfolio {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .cartao-hobby {
+    flex: 1 1 45%;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Desktop (a partir de 769px) — menu horizontal fixo, sem alternância
+   -------------------------------------------------------------------------- */
+@media (min-width: 769px) {
+  .menu-toggle-label {
+    display: none;
+  }
+
+  .navegacao {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    background-color: transparent;
+    border-bottom: none;
+  }
+
+  .navegacao__lista {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .hero__grelha {
+    flex-wrap: nowrap;
+  }
+
+  .cartao-hobby {
+    flex: 1 1 220px;
+  }
+
+  section {
+    padding-block: var(--espaco-xl);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Ecrãs largos — respira mais o layout principal
+   -------------------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  .container {
+    width: min(1180px, 90%);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Acessibilidade: respeita utilizadores que pedem menos movimento
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
