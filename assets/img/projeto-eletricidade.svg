@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <rect width="640" height="400" fill="#1c2530"/>
+  <rect x="0" y="0" width="640" height="10" fill="#3fb8af"/>
+  <text x="40" y="220" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#eef1f4">Formação em Eletricidade</text>
+  <circle cx="560" cy="80" r="46" fill="none" stroke="#3fb8af" stroke-width="4" opacity="0.7"/>
+</svg>

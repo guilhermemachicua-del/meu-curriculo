@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 452">
+  <rect width="640" height="452" fill="#eef1f4"/>
+  <rect x="20" y="20" width="600" height="412" fill="none" stroke="#f2a93b" stroke-width="4"/>
+  <text x="320" y="180" font-family="Georgia, serif" font-size="30" fill="#12181f" text-anchor="middle">Certificado de Formação</text>
+  <text x="320" y="230" font-family="Georgia, serif" font-size="20" fill="#12181f" text-anchor="middle">Eletricidade Básica</text>
+  <text x="320" y="300" font-family="Arial, sans-serif" font-size="16" fill="#5a6472" text-anchor="middle">Guilherme Machicua</text>
+</svg>

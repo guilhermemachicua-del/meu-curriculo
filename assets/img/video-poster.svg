@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#12181f"/>
+  <circle cx="320" cy="180" r="50" fill="#f2a93b" opacity="0.9"/>
+  <polygon points="308,158 308,202 348,180" fill="#12181f"/>
+  <text x="320" y="300" font-family="Arial, sans-serif" font-size="20" fill="#eef1f4" text-anchor="middle">Vídeo de apresentação — Guilherme Machicua</text>
+</svg>
